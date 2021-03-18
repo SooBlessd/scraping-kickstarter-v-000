@@ -1,4 +1,40 @@
+# #re require libraries/modules here
+# require 'nokogiri'
+# require 'pry'
+#
+# # projects: kickstarter.css("li.project.grid_4")
+# # projects:project = kickstarter.css("li.project.grid_4")
+# # title:  project.css("h2.bbcard_name strong a").text
+# # image link: project.css("div.project-thumbnail a img").attribute("src").value
+# # description: project.css("p.bbcard_blurb").text
+#
+# # location: project.css("ul.project-meta span.location-name").text
+# # percentage: project.css("li.first.funded strong").text
+# # percent_funded: project.css("ul.project-stats li.first.funded strong").text.gsub("%","").to_i
+#
+#
+# def create_project_hash
+#   html = File.read('fixtures/kickstarter.html')
+#   kickstarter = Nokogiri::HTML(html)
+#   # Itereate through the projects
+#   projects ={}
+#   kickstarter.css("li.project.grid_4").each do |project|
+#     projects[project]
+#     title = project.css("h2.bbcard_name strong a").text
+#     project[title.to_sym] = {}
+#
+#     project.css("div.project-thumbnail a img").attribute("src").value
+#     binding.pry
+#     # end
+#   end
+# # return projects
+#   projects
+#
+# end
+#
+# create_project_hash
 
+# file: kickstarter_scraper.rb
 
 require 'nokogiri'
 require 'pry'
